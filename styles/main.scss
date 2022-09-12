@@ -6,13 +6,14 @@
 
 // Base
 @import "./base/normalize";
+@import "./base/core";
 @import "./base/typography";
 
 // Layout
-//@import "./layout/header";
+@import "./layout/header";
 
 // Modules
-//@import "./modules/buttons";
+@import "./modules/buttons";
 
 // Pages
 //@import "./pages/home";

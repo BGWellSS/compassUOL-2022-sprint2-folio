@@ -1,3 +1,11 @@
 @charset "UTF-8";
 
-//
+// Buttons
+.button-primary-normal {
+  display: inline-block;
+  background: $color-primary;
+  border-radius: 8px;
+  color: $color-light;
+  padding: 1.7rem 3.35rem;
+  text-decoration: none;
+}
