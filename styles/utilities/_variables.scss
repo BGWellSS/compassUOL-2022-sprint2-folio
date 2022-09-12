@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+// Main Colors
+$color-primary:           #5468E7;
+$color-primary-shade:     #D1ECFD;
+$color-secondary:         #C897E4;
+$color-secondary-shade:   #E8BEFF;
+$color-dark:              #232340;
+$color-dark-shade:        #323259;
+$color-light:             #FFFFFF;
+$color-light-shade:       #EDEDED;
+
+// Accent Colors
+$accentcolor-1:           #FFC7DF;
+$accentcolor-1-shade:     #FFADD0;
+$accentcolor-2:           #FFBA79;
+$accentcolor-2-shade:     #FFCE79;
+$accentcolor-3:           #9A97ED;
+$accentcolor-3-shade:     #908CFF;
+
+// Text Colors
+$textcolor-primary:       #000000;
+$textcolor-shade-1:       #606060;
+$textcolor-shade-2:       #ADADAD;
+$textcolor-shade-3:       #8B8B8B;
+
+// Gradient Colors
+$gradientcolor-1:         linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
+$gradientcolor-2:         linear-gradient(180deg, #3A8FFF 0%, #0837AE 100%);
+$gradientcolor-3:         linear-gradient(0deg, rgba(50, 50, 89, 0.0001) 0%, #323259 72.97%);
+
+// Line decorations
+$linecolor-decoration-1:  #D1ECFD;
+$linecolor-decoration-2:  #232340;
+$linecolor-decoration-3:  #9A97ED;
+
+// Shadows
+$boxshadow-1:             0px 6px 8px rgba(216, 216, 216, 0.5);
+
+// Strokes
+$stroke-1:                2px solid #232340;
+
+// Borders
+$border-1:                1px solid #D8D8D8;
