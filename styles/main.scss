@@ -1,15 +1,17 @@
 @charset "UTF-8";
 
 // Utilities
-@import "./utilities/variables";
+@import "./utilities/variables";  // Project variables
+@import "./utilities/utilities";  // Utility classes
 
 // Base
 @import "./base/normalize";
 @import "./base/core";
 @import "./base/typography";
 
-// Layout
+// Layout (Section)
 @import "./layout/header";
+@import "./layout/about";
 
 // Modules
 @import "./modules/menu";

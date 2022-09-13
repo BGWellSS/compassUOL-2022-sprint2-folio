@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.caption {
+  $caption-margin-left: 40px;
+  position: relative;
+  margin-left: $caption-margin-left;
+
+  &::before {
+    content: "00.";
+    position: absolute;
+    left: -$caption-margin-left;
+    color: $textcolor-shade-2;
+  }
+}
+
+.body-small {
+  color: $textcolor-shade-3;
+}
