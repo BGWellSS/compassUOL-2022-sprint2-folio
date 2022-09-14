@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+// Card Box 1
+.card_box-1 {
+  .card-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: $color-light;
+    color: $color-primary;
+    border-radius: 32px;
+    padding: 13vw 0 13vw 13vw;
+    box-shadow: $boxshadow-2;
+    overflow: hidden;
+  
+    & ~ .card-item {
+      margin-top: 6.5vw;
+    }
+  
+    &.active {
+      background: $color-primary;
+      color: $color-light;
+      box-shadow: none;
+    }
+  
+    img {
+      height: 24.27vw;
+      width: 24.27vw;
+    }
+  
+    p {
+      margin-left: 6.4vw;
+    }
+  }
+}
+
+
+.card_achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+
+  .card_achievement-value {
+    color: $color-primary;
+  }
+}

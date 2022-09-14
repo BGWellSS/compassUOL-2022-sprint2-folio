@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+// Service Section
+.service {
+  position: relative;
+  background: $gradientcolor-1;
+  color: $color-dark;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 38%;
+    left: 0;
+    width: 470px;
+    height: 555px;
+    background: url("./../../images/theme/bkg-line-accent3.svg") no-repeat 0vw;
+    opacity: 0.6;
+    z-index: -1;
+  }
+
+  .container {
+    padding: 13.85vw 10vw 0 10vw;
+  }
+
+  .service-caption, .service-caption-2 {
+    &::before {
+      content: "03.";
+    }
+  }
+  .service-caption {
+    color: $color-primary;
+
+    &::before {
+      color: $color-primary;
+    }
+  }
+
+  .service-title {
+    margin: 6.4vw 0;
+    margin-right: 15vw;
+  }
+
+  .card_box-1 { 
+    margin: 15vw 0;
+  }
+
+  .service-subtitle {
+    margin: 6.4vw 0 9.1vw;
+    margin-right: 20vw;
+  }
+
+  .card_achievement, .slideshow-panel { 
+    margin: 9.1vw 0;
+  }
+
+  .slideshow-panel {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: -60px;
+      width: 470px;
+      height: 555px;
+      background: url("./../../images/theme/bkg-line2-accent3.svg") no-repeat 0vw;
+      opacity: 0.15;
+      z-index: -1;
+    }
+  }
+}
