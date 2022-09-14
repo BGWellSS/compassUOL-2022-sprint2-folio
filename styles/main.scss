@@ -11,8 +11,6 @@
 
 // Layout (Section)
 @import "./layout/header";
-@import "./layout/about";
-@import "./layout/service";
 
 // Modules
 @import "./modules/menu";
@@ -22,3 +20,5 @@
 
 // Pages
 //@import "./pages/home";
+@import "./pages/about";
+@import "./pages/service";
