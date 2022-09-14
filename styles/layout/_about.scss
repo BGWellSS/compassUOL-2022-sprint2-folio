@@ -27,23 +27,6 @@
     align-items: center;
   }
 
-  .navigation-arrows {
-    display: flex;
-    align-items: center;
-  }
-
-  .navigation-arrow {
-    padding: 1.7rem 1.4rem;
-    border-radius: 100%;
-
-    & ~ .navigation-arrow {
-      margin-left: 4.25vw;
-    }
-    &.active {
-      background-color: $color-primary;
-    }
-  }
-
   .about-dropdown-menu {
     display: flex;
     align-items: center;
