@@ -2,27 +2,28 @@
 
 // Main Colors
 $color-primary:           #5468E7;
-$color-primary-shade:     #D1ECFD;
 $color-secondary:         #C897E4;
-$color-secondary-shade:   #E8BEFF;
 $color-dark:              #232340;
-$color-dark-shade:        #323259;
 $color-light:             #FFFFFF;
+$color-primary-shade:     #D1ECFD;
+$color-secondary-shade:   #E8BEFF;
+$color-dark-shade:        #323259;
 $color-light-shade:       #EDEDED;
 
 // Accent Colors
 $accentcolor-1:           #FFC7DF;
-$accentcolor-1-shade:     #FFADD0;
 $accentcolor-2:           #FFBA79;
-$accentcolor-2-shade:     #FFCE79;
 $accentcolor-3:           #9A97ED;
+$accentcolor-1-shade:     #FFADD0;
+$accentcolor-2-shade:     #FFCE79;
 $accentcolor-3-shade:     #908CFF;
 
 // Text Colors
-$textcolor-primary:       #000000;
-$textcolor-shade-1:       #606060;
-$textcolor-shade-2:       #ADADAD;
-$textcolor-shade-3:       #8B8B8B;
+$textcolor-primary:       #000000;  // Light mode
+$textcolor-secondary:     #ffffff;  // Dark mode
+$textcolor-shade-1:       #606060;  // Body light
+$textcolor-shade-2:       #ADADAD;  // Deactive
+$textcolor-shade-3:       #8B8B8B;  // Body Dark
 $textcolor-mobile-shade:  #595976;
 
 // Gradient Colors
@@ -46,5 +47,5 @@ $stroke-1:                2px solid #232340;
 // Borders
 $border-1:                1px solid #D8D8D8;
 
-// Font 
+// Font family
 $primary-font-family:     'Roboto', sans-serif;
