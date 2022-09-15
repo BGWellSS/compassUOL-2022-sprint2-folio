@@ -6,58 +6,71 @@ body {
   font-size: 1.6rem;
 }
 
-h1 {
+h1,
+.title1-light,
+.title1-dark {
   font-size: 7.6rem;
   font-weight: 700;
   line-height: 9.2rem;
   letter-spacing: -0.05rem;
 }
 
-h2 {
+h2,
+.title2-light,
+.title2-dark {
   font-size: 6.4rem;
   font-weight: 700;
   line-height: 7.2rem;
   letter-spacing: -0.05rem;
 }
 
-h3 {
+h3,
+.title3-light,
+.title3-dark {
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 5.6rem;
   letter-spacing: -0.05rem;
 }
 
-h4 {
+h4,
+.title4-light,
+.title4-dark {
   font-size: 4.0rem;
   font-weight: 700;
   line-height: 4.8rem;
   letter-spacing: -0.04rem;
 }
 
-h5 {
+h5,
+.title5-light,
+.title5-dark {
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 4rem;
   letter-spacing: -0.05rem;
 }
 
-h6 {
+h6,
+.title6-light,
+.title6-dark {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 3.2rem;
   letter-spacing: -0.02rem;
 }
 
+.text-light,
+.text-dark {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+
 .caption {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-}
-
-.body-small {
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 2.8rem;
 }
 
 // Menu
@@ -68,7 +81,8 @@ h6 {
 }
 
 // Tablet
-.tablet-number {
+.tablet-number-light,
+.tablet-number-dark {
   font-size: 14rem;
   font-weight: 500;
   line-height: 1;
@@ -86,7 +100,8 @@ h6 {
 }
 
 // Buttons
-.button-2-normal {
+.button-2-normal,
+.button-primary-dark {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2.2rem;
