@@ -1,3 +1,7 @@
+.container {
+  padding: 13.85vw 10vw 0 10vw;
+}
+
 .page-navigation {
   display: flex;
   align-items: center;
@@ -748,6 +752,51 @@ h6,
   border-radius: 100%;
 }
 
+.card_jobs .card-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 12vw 10.7vw;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+}
+.card_jobs .card-item > * {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.card_jobs .card-item:hover {
+  background: #232340 url("./../../images/theme/bkg-card-jobs1.svg") no-repeat;
+  background-position-x: 85%;
+  background-position-y: 50%;
+  width: 100vw;
+}
+.card_jobs .card-item:hover .card-title {
+  color: #ffffff;
+}
+.card_jobs .card-item:hover .card-text {
+  color: #8B8B8B;
+}
+.card_jobs .card-item:hover .link-icon-dark {
+  display: none;
+}
+.card_jobs .card-item:hover .link-icon-white {
+  display: block;
+}
+.card_jobs .card-item ~ .card-item {
+  margin-top: 4.3vw;
+}
+.card_jobs .card-item .card-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5vw;
+  height: 5vw;
+}
+.card_jobs .card-item .link-icon-white {
+  display: none;
+}
+
 .slideshow-panel {
   width: 100vw;
 }
@@ -914,12 +963,8 @@ h6,
 .work .container {
   padding: 13.85vw 10vw 0 10vw;
 }
-.work .work-caption {
-  color: #5468E7;
-}
 .work .work-caption::before {
   content: "04.";
-  color: #5468E7;
 }
 .work .work-title {
   color: #232340;
@@ -973,4 +1018,58 @@ h6,
 }
 .cta .cta-title {
   margin: 6.4vw 0;
+}
+
+.jobs-page {
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%), url("./../../images/theme/bkg-line2-accent3.svg") no-repeat;
+  background-position: 50vw 0;
+}
+.jobs-page .header {
+  background: transparent;
+}
+.jobs-page .jobs {
+  width: 100vw;
+  overflow: hidden;
+}
+.jobs-page .jobs-caption::before {
+  content: "05.";
+}
+.jobs-page .jobs-title {
+  margin: 6.4vw 0;
+  margin-right: 15vw;
+}
+.jobs-page .card-item:nth-child(1) .card-title {
+  display: flex;
+  align-items: center;
+}
+.jobs-page .card-item:nth-child(1) .card-title::after {
+  content: "2";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  border-radius: 100%;
+  background: linear-gradient(180deg, #3A8FFF 0%, #0837AE 100%);
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+.jobs-page .card-item:nth-child(4) .card-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.jobs-page .card-item:nth-child(4) .card-title::after {
+  content: "6";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  border-radius: 100%;
+  background: linear-gradient(180deg, #3A8FFF 0%, #0837AE 100%);
+  color: #ffffff;
+  font-size: 1.4rem;
 }/*# sourceMappingURL=main.css.map */

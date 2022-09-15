@@ -8,11 +8,8 @@
   }
 
   .work-caption {
-    color: $color-primary;
-
     &::before {
       content: "04.";
-      color: $color-primary;
     }
   }
 

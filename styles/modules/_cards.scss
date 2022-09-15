@@ -104,3 +104,58 @@
     border-radius: 100%;
   }
 }
+
+// Jobs Cards
+.card_jobs {
+  .card-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 12vw 10.7vw;
+    background-color: $color-light;
+    border-radius: 24px;
+
+    & > * {
+      width: fit-content;
+    }
+
+    &:hover {
+      background: $color-dark url("./../../images/theme/bkg-card-jobs1.svg") no-repeat;
+      background-position-x: 85%;
+      background-position-y: 50%;
+      width: 100vw;
+      
+      .card-title {
+        color: $textcolor-secondary;
+      }
+
+      .card-text {
+        color: $textcolor-shade-3;
+      }
+
+      .link-icon-dark {
+        display: none;
+      }
+      
+      .link-icon-white {
+        display: block;
+      }
+    }
+
+    & ~ .card-item {
+      margin-top: 4.3vw;
+    }
+
+    .card-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 5vw;
+      height: 5vw;
+    }
+
+    .link-icon-white {
+      display: none;
+    }
+  }
+}
