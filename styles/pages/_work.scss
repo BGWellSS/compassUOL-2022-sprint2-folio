@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+// Work Page
+.work {
+
+  .container {
+    padding: 13.85vw 10vw 0 10vw;
+  }
+
+  .work-caption {
+    color: $color-primary;
+
+    &::before {
+      content: "04.";
+      color: $color-primary;
+    }
+  }
+
+  .work-title {
+    color: $color-dark;
+    margin: 6.4vw 0;
+    margin-right: 15vw;
+  }
+
+  .body-small {
+    color: $textcolor-shade-1;
+  }
+
+  .work-navigation, .page-content {
+    margin-top: 10vw;
+  }
+
+  .button-contact-us {
+    margin: 10vw 0;
+  }
+}

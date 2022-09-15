@@ -9,3 +9,13 @@
   padding: 1.7rem 3.35rem;
   text-decoration: none;
 }
+
+.button-2-normal {
+  display: flex;
+  justify-content: center;
+  background: $color-primary;
+  border-radius: 8px;
+  color: $color-light;
+  padding: 1.2rem;
+  text-decoration: none;
+}

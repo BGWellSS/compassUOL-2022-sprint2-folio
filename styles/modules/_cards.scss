@@ -34,7 +34,7 @@
   }
 }
 
-
+// Achievement Cards
 .card_achievement {
   display: flex;
   flex-direction: column;
@@ -43,5 +43,64 @@
 
   .card_achievement-value {
     color: $color-primary;
+  }
+}
+
+// Product Cards
+.card_products {
+  .card-item {
+    &:nth-child(4n+1) .card-image {
+      background-color: $accentcolor-2;
+    }
+    &:nth-child(4n+2) .card-image {
+      background-color: $color-secondary-shade;
+    }
+    &:nth-child(4n+3) .card-image {
+      background-color: $accentcolor-2-shade;
+    }
+    &:nth-child(4n+4) .card-image {
+      background-color: $color-primary-shade;
+    }
+    & ~ .card-item {
+      margin-top: 8.5vw;
+    }
+
+    .card-image {
+      width: 100%;
+      border-radius: 17px;
+    }
+  }
+
+  .card-featured {
+
+    .image-container {
+      position: relative;
+
+      &::after {
+        content: "Featured Product";
+        position: absolute;
+        bottom: 7vw;
+        left: 7vw;
+        padding: 2.1vw 4vw;
+        background-color: $accentcolor-3;
+        color: $color-light;
+        border-radius: 15px;
+      }
+    }
+  }
+
+  .card-title {
+    color: $color-dark;
+    margin-top: 6.5vw;
+  }
+
+  .card-link {
+    display: block;
+  }
+  
+  .link-icon {
+    padding: 1.7rem 1.4rem;
+    border: 2px solid $color-dark;
+    border-radius: 100%;
   }
 }
