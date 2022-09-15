@@ -3,6 +3,7 @@
 // Utilities
 @import "./utilities/variables";  // Project variables
 @import "./utilities/utilities";  // Utility classes
+@import "./utilities/vatiations"; // Elements classes variations
 
 // Base
 @import "./base/normalize";
@@ -23,3 +24,4 @@
 @import "./pages/about";
 @import "./pages/service";
 @import "./pages/work";
+@import "./pages/cta";
