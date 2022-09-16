@@ -745,6 +745,7 @@ h6,
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    border-left: 0.7px solid rgba(255, 255, 255, 0.2);
   }
   .footer .footer-box:nth-child(3) .speach-icon {
     width: 5vw;
@@ -1323,6 +1324,9 @@ h6,
   margin-left: -38vw;
   margin-top: 15vw;
 }
+.about-page .about .about-background-image2 {
+  display: none;
+}
 .about-page .about .about-subtitle {
   margin-top: 15vw;
   margin-bottom: 10.5vw;
@@ -1342,23 +1346,77 @@ h6,
   border-radius: 100%;
   box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.242297);
 }
+.about-page .about .about-left {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
   .about-page .header {
     margin-bottom: 5vw;
-    z-index: 1;
   }
   .about-page .about {
     position: relative;
+    display: flex;
+    align-items: flex-start;
+    background: #232340 url("./../../images/theme/bkg-line-dark2.svg") no-repeat;
+    background-position: -10% 0;
   }
   .about-page .about::after {
     content: "";
     position: absolute;
-    background: #232340 url("./../../images/theme/bkg-object-3.svg") no-repeat;
+    background: url("./../../images/theme/bkg-object-3.svg") no-repeat;
     width: 571px;
     height: 749px;
     right: 0;
     top: -10px;
+    z-index: 1;
+  }
+  .about-page .about .about-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8vw 0 8vw 5vw;
+  }
+  .about-page .about .about-left .logo {
+    margin-bottom: 32vw;
+  }
+  .about-page .about .years-menu {
+    list-style: none;
+    padding: 0;
+  }
+  .about-page .about .years-menu .years-menu-item {
+    position: relative;
+    color: #8B8B8B;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+  }
+  .about-page .about .years-menu .years-menu-item ~ .years-menu-item {
+    margin-top: 8vw;
+  }
+  .about-page .about .years-menu .years-menu-item:hover {
+    color: #ffffff;
+  }
+  .about-page .about .years-menu .years-menu-item:hover::before {
+    content: "|";
+    position: absolute;
+    top: 0;
+    left: -20px;
+  }
+  .about-page .about .years-menu .years-menu-item:hover::after {
+    content: "";
+    position: absolute;
+    background: url("./../../images/theme/point-line.svg") no-repeat;
+    top: 5px;
+    right: -230px;
+    width: 200px;
+    height: 16px;
+    z-index: 3;
+  }
+  .about-page .about .about-right {
+    position: relative;
+    padding: 8vw 5vw;
     z-index: 2;
   }
   .about-page .about .about-caption {
@@ -1370,10 +1428,52 @@ h6,
   .about-page .about .about-caption::before {
     color: #8B8B8B;
   }
+  .about-page .about .about-group1 {
+    display: flex;
+    align-items: center;
+  }
+  .about-page .about .about-group1 .about-dropdown-menu {
+    display: none;
+  }
+  .about-page .about .about-background-image {
+    display: none;
+  }
+  .about-page .about .about-background-image2 {
+    display: block;
+    width: 75vw;
+  }
   .about-page .about .about-title {
     font-size: 4.8rem;
     line-height: 5.6rem;
     font-weight: 700;
+  }
+  .about-page .about .about-group2 {
+    display: flex;
+  }
+  .about-page .about .group2-sidea, .about-page .about .group2-sideb {
+    box-sizing: border-box;
+    width: 50%;
+  }
+  .about-page .about .group2-sidea .about-subtitle {
+    margin: 5vw 0;
+    position: relative;
+  }
+  .about-page .about .group2-sidea .about-subtitle::before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 2px;
+    background-color: #FFC7DF;
+    top: 0;
+    left: -50px;
+  }
+  .about-page .about .group2-sidea .about-subtitle-text {
+    margin: 5vw 0;
+  }
+  .about-page .about .group2-sideb {
+    margin-top: 5vw;
+    height: auto;
+    box-shadow: none;
   }
 }
 .service-page {

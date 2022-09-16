@@ -47,6 +47,9 @@
       margin-left: -38vw;
       margin-top: 15vw;
     }
+    .about-background-image2 {
+      display: none;
+    }
   
     .about-subtitle {
       margin-top: 15vw;
@@ -69,6 +72,10 @@
       border-radius: 100%;
       box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.242297);
     }
+
+    .about-left {
+      display: none;
+    }
   }
 }
 
@@ -76,20 +83,80 @@
   .about-page {
     .header {
       margin-bottom: 5vw;
-      z-index: 1;
     }
 
     .about {
       position: relative;
+      display: flex;
+      align-items: flex-start;
+      background: $color-dark url("./../../images/theme/bkg-line-dark2.svg") no-repeat;
+      background-position: -10% 0;
 
       &::after {
         content: "";
         position: absolute;
-        background: $color-dark url("./../../images/theme/bkg-object-3.svg") no-repeat;
+        background: url("./../../images/theme/bkg-object-3.svg") no-repeat;
         width: 571px;
         height: 749px;
         right: 0;
         top: -10px;
+        z-index: 1;
+      }
+
+      .about-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 8vw 0 8vw 5vw;
+
+        .logo {
+          margin-bottom: 32vw;
+        }
+      }
+
+      .years-menu {
+        list-style: none;
+        padding: 0;
+
+        .years-menu-item {
+          position: relative;
+          color: $textcolor-shade-3;
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 2.4rem;
+
+          & ~ .years-menu-item {
+            margin-top: 8vw;
+          }
+
+          &:hover {
+            color: $textcolor-secondary;
+
+            &::before {
+              content: "|";
+              position: absolute;
+              top: 0;
+              left: -20px;
+
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              background: url("./../../images/theme/point-line.svg") no-repeat;
+              top: 5px;
+              right: -230px;
+              width: 200px;
+              height: 16px;
+              z-index: 3;
+            }
+          }
+        }
+      }
+      
+      .about-right {
+        position: relative;
+        padding: 8vw 5vw;
         z-index: 2;
       }
 
@@ -104,10 +171,60 @@
         }
       }
 
+      .about-group1 {
+        display: flex;
+        align-items: center;
+
+        .about-dropdown-menu {
+          display: none;
+        }
+      }
+      .about-background-image {
+        display: none;
+      }
+      .about-background-image2 {
+        display: block;
+        width: 75vw;
+      }
       .about-title {
         font-size: 4.8rem;
         line-height: 5.6rem;
         font-weight: 700;
+      }
+
+      .about-group2 {
+        display: flex;
+      }
+      .group2-sidea, .group2-sideb {
+        box-sizing: border-box;
+        width: 50%;
+      }
+
+      .group2-sidea {
+        .about-subtitle {
+          margin: 5vw 0;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            height: 80px;
+            width: 2px;
+            background-color: $accentcolor-1;
+            top: 0;
+            left: -50px;
+          }
+        }
+        .about-subtitle-text {
+          margin: 5vw 0;
+        }
+      }
+
+
+      .group2-sideb {
+        margin-top: 5vw;
+        height: auto;
+        box-shadow: none;
       }
     }
   }
