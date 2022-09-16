@@ -8,6 +8,12 @@
   padding: 13.85vw 8.5vw;
   overflow: hidden;
 
+  .cta-caption {
+    &::before {
+      content: "05";
+    }
+  }
+
   .container {
     position: relative;
     height: $bkg-image1-yoffset + $bkg-image1-height - (2 * 64px) - 40px;
