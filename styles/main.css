@@ -755,6 +755,7 @@ h6,
   .footer .footer-box:nth-child(3) .text-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: nowrap;
     width: 100%;
   }
@@ -763,6 +764,16 @@ h6,
     font-size: 2.4rem;
     line-height: 3.2rem;
     font-weight: 700;
+  }
+  .footer .footer-box:nth-child(3) .arrow-left-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #D8D8D8;
+    border-radius: 100%;
   }
   .footer .footer-box .footer-title {
     font-size: 4.8rem;
@@ -1062,7 +1073,7 @@ h6,
   color: #5468E7;
   border-radius: 32px;
   padding: 13vw 0 13vw 13vw;
-  box-shadow: 0px 8px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 8px 0px rgba(255, 255, 255, 0.5), 0px 6px 8px rgba(216, 216, 216, 0.5);
   overflow: hidden;
 }
 .card_box-1 .card-item ~ .card-item {
@@ -1074,8 +1085,8 @@ h6,
   box-shadow: none;
 }
 .card_box-1 .card-item img {
-  height: 24.27vw;
-  width: 24.27vw;
+  height: 20vw;
+  width: 20vw;
 }
 .card_box-1 .card-item p {
   margin-left: 6.4vw;
@@ -1537,6 +1548,113 @@ h6,
   z-index: -1;
 }
 
+@media screen and (min-width: 768px) {
+  .service-page .header {
+    margin-bottom: 4vw;
+  }
+  .service-page .service .service-group1 {
+    display: flex;
+    align-items: center;
+  }
+  .service-page .service .container {
+    padding: 8vw 5vw;
+  }
+  .service-page .service .inner-container {
+    padding: 0 0 0 10vw;
+  }
+  .service-page .service .caption::after {
+    content: "";
+    position: absolute;
+    background: url("./../../images/theme/logo-symbol2.svg") no-repeat;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: -100px;
+  }
+  .service-page .service .service-title {
+    margin: 5vw 0;
+    margin-right: 10vw;
+  }
+  .service-page .service .card_box-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2vw 4vw;
+    margin: 5vw 0;
+    background: #FFFFFF;
+    border-radius: 24px;
+    box-shadow: 0px 8px 0px rgba(255, 255, 255, 0.5), 0px 6px 8px rgba(216, 216, 216, 0.5);
+    max-height: 25vw;
+  }
+  .service-page .service .card-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+    width: 25%;
+    box-shadow: none;
+  }
+  .service-page .service .card-item ~ .card-item {
+    margin: 0;
+  }
+  .service-page .service .card-item.active, .service-page .service .card-item:hover {
+    height: 300px;
+  }
+  .service-page .service .card-item img {
+    width: 12vw;
+    height: auto;
+  }
+  .service-page .service .card-item .menu-item {
+    margin: 0;
+    margin-top: 3vw;
+  }
+  .service-page .service .service-group2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+  }
+  .service-page .service .service-group2 .group2-content {
+    width: 50%;
+    order: 2;
+    padding: 5vw 5vw 0 5vw;
+    box-sizing: border-box;
+  }
+  .service-page .service .service-group2 .service-caption-2 {
+    margin-left: 100px;
+  }
+  .service-page .service .service-group2 .service-subtitle {
+    margin: 5vw 0;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+  }
+  .service-page .service .service-group2 .slideshow-panel {
+    width: 50%;
+    order: 1;
+    padding: 5vw 0 4vw 5vw;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .service-page .service .service-group2 .slideshow-panel::before {
+    background: transparent;
+  }
+  .service-page .service .service-group2 .slideshow-panel .slideshow-container {
+    max-height: 60vw;
+    overflow: hidden;
+  }
+  .service-page .service .service-group2 .slideshow-panel .slideshow-item::before {
+    width: 40vw;
+    height: 40vw;
+  }
+  .service-page .service .service-group2 .slideshow-panel .slideshow-image {
+    width: 100%;
+  }
+  .service-page .service .service-group2 .slideshow-panel .slideshow-pagination {
+    margin-top: 4vw;
+  }
+}
 .work .container {
   padding: 13.85vw 10vw 0 10vw;
 }

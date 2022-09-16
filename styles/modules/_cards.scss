@@ -10,7 +10,7 @@
     color: $color-primary;
     border-radius: 32px;
     padding: 13vw 0 13vw 13vw;
-    box-shadow: $boxshadow-2;
+    box-shadow: $boxshadow-2, $boxshadow-1;
     overflow: hidden;
   
     & ~ .card-item {
@@ -24,8 +24,8 @@
     }
   
     img {
-      height: 24.27vw;
-      width: 24.27vw;
+      height: 20vw;
+      width: 20vw;
     }
   
     p {
