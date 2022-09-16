@@ -4,6 +4,11 @@
 .container {
   padding: 13.85vw 10vw 0 10vw;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 9vw;
+  }
+}
 
 // Page navigation
 .page-navigation {

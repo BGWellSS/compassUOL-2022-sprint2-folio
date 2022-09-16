@@ -68,6 +68,27 @@ h6,
   line-height: 2.8rem;
 }
 
+@media screen and (min-width: 768px) {
+  h3,
+  .title3-light,
+  .title3-dark {
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 7.2rem;
+    letter-spacing: -0.5rem;
+  }
+  
+  h5,
+  .title5-light,
+  .title5-dark {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    letter-spacing: -0.05rem;
+  }
+}
+
+// Captions
 .caption {
   font-size: 1.4rem;
   font-weight: 500;
@@ -101,8 +122,9 @@ h6,
 }
 
 // Buttons
+.button-primary-dark,
 .button-2-normal,
-.button-primary-dark {
+.button-3-normal {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2.2rem;

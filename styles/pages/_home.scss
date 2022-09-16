@@ -11,8 +11,8 @@
     background: transparent url("./../../images/theme/bkg-header2.svg") no-repeat;
     background-size: 150vw;
     background-position-x: -25vw ;
-    background-position-y: 110% ;
-    padding-bottom: 70vw;
+    background-position-y: 95% ;
+    padding-bottom: 60vw;
     overflow: hidden;
   }
 
@@ -20,5 +20,36 @@
     width: 150vw;
     margin-top: -30vw;
     margin-left: -25vw;
+  }
+
+  .hero-navigation {
+    margin-top: 8vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-page {
+    background-position: 25vw 0;
+
+    .hero {
+      background-position-x: 0;
+      background-position-y: -80px;
+      background-size: 100%;
+      padding-bottom: 15vw;
+      overflow: visible;
+    }
+
+    .page-content { margin-right: 55%; position: relative; }
+
+    .title3-light { margin-right: 20%; }
+
+    .text-light { margin: 4vw 0; margin-right: 20%; }
+
+    .hero-navigation {
+      position: absolute;
+      top: 0;
+      right: -115%;
+      margin: 0;
+    }
   }
 }
