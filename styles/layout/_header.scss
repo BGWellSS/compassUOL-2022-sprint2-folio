@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+// Header
+.header {
+  position: relative;
+  padding-top: 5.2rem;
+  overflow: hidden;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+  }
+
+  .header-botton {
+    margin-top: 4.4rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  input#menuburger,
+  .button-3-normal {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    .button-3-normal {
+      display: block;
+    }
+
+    .header-container {
+      padding: 0 5vw;
+    }
+  }
+}

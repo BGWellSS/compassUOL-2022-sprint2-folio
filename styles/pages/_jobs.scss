@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+// Jobs
+.jobs-page {
+  background: $gradientcolor-1, url("./../../images/theme/bkg-line2-accent3.svg") no-repeat;
+  background-position: 50vw 0;
+
+  .header {
+    background: transparent;
+  }
+
+  .jobs {
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .jobs-caption {
+    &::before {
+      content: "05.";
+    }
+  }
+
+  .jobs-title {
+    margin: 6.4vw 0;
+    margin-right: 15vw;
+  }
+
+  .card-item {
+    &:nth-child(1) {
+      .card-title {
+        display: flex;
+        align-items: center;
+
+        &::after {
+          content: "2";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 24px;
+          height: 24px;
+          margin-left: 10px;
+          border-radius: 100%;
+          background: $gradientcolor-2;
+          color: $textcolor-secondary;
+          font-size: 1.4rem;
+        }
+      }
+    }
+    &:nth-child(4) {
+      .card-title {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        &::after {
+          content: "6";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 24px;
+          height: 24px;
+          margin-left: 10px;
+          border-radius: 100%;
+          background: $gradientcolor-2;
+          color: $textcolor-secondary;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}

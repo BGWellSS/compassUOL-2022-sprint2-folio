@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+// CTA - Call to action
+.cta {
+  $bkg-image1-yoffset: 245px;
+  $bkg-image1-height: 731px;
+
+  padding: 13.85vw 8.5vw;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    height: $bkg-image1-yoffset + $bkg-image1-height - (2 * 64px) - 40px;
+    padding: 17vw 0 17vw 10.5vw;
+    background-color: $color-primary;
+    border-radius: 28.5px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("./../../images/theme/bkg-object-1.svg") no-repeat;
+      //background-size: 10vw 10vw;
+      top: $bkg-image1-yoffset;
+      right: -8.5vw;
+      width: 254px;
+      height: $bkg-image1-height;
+      z-index: 0;
+    }
+  
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("./../../images/theme/bkg-object-2.svg") no-repeat;
+      top: 400px;
+      left: -8.5vw;
+      width: 100vw;
+      height: 521px;
+      z-index: 1;
+    }
+
+    & > * {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .cta-title {
+    margin: 6.4vw 0;
+  }
+}

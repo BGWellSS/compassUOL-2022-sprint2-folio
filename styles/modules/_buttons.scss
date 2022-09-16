@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+// Buttons
+.button-primary-normal {
+  display: inline-block;
+  background: $color-primary;
+  border-radius: 8px;
+  color: $color-light;
+  padding: 1.7rem 3.35rem;
+  text-decoration: none;
+}
+
+.button-primary-dark {
+  display: inline-block;
+  background: $color-light;
+  border-radius: 8px;
+  color: $color-primary;
+  padding: 1.2rem 3.25rem;
+  text-decoration: none;
+}
+
+.button-2-normal {
+  display: flex;
+  justify-content: center;
+  background: $color-primary;
+  border-radius: 8px;
+  color: $color-light;
+  padding: 1.2rem;
+  text-decoration: none;
+}
+
+.button-3-normal {
+  display: flex;
+  justify-content: center;
+  background: $color-dark;
+  border-radius: 8px;
+  color: $textcolor-secondary;
+  padding: 1.7rem 4rem;
+  text-decoration: none;
+}

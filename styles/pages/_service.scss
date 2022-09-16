@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+// Service Section
+.service-page {
+  background: $gradientcolor-1;
+
+  .header {
+    background: transparent;
+    margin-bottom: 10vw;
+  }
+
+  .service {
+    position: relative;
+    color: $color-dark;
+    overflow: hidden;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 38%;
+      left: 0;
+      width: 470px;
+      height: 555px;
+      background: url("./../../images/theme/bkg-line-accent3.svg") no-repeat 0vw;
+      opacity: 0.6;
+      z-index: -1;
+    }
+  
+    .service-caption, .service-caption-2 {
+      &::before {
+        content: "03.";
+      }
+    }
+    .service-caption {
+      color: $color-primary;
+  
+      &::before {
+        color: $color-primary;
+      }
+    }
+  
+    .service-title {
+      margin: 6.4vw 0;
+      margin-right: 15vw;
+    }
+  
+    .card_box-1 { 
+      margin: 15vw 0;
+    }
+  
+    .service-subtitle {
+      margin: 6.4vw 0 9.1vw;
+      margin-right: 20vw;
+    }
+  
+    .card_achievement, .slideshow-panel { 
+      margin: 9.1vw 0;
+    }
+  
+    .slideshow-panel {
+      position: relative;
+  
+      &::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: -60px;
+        width: 470px;
+        height: 555px;
+        background: url("./../../images/theme/bkg-line2-accent3.svg") no-repeat 0vw;
+        opacity: 0.15;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .service-page {
+    .header {
+      margin-bottom: 4vw;
+    }
+
+    .service {
+      .service-group1 {
+        display: flex;
+        align-items: center;
+      }
+
+      .container {
+        padding: 8vw 5vw;
+      }
+
+      .inner-container {
+        padding: 0 0 0 10vw;
+      }
+
+      .caption {
+        &::after {
+          content: "";
+          position: absolute;
+          background: url("./../../images/theme/logo-symbol2.svg") no-repeat;
+          width: 24px;
+          height: 24px;
+          top: 0;
+          left: -100px;
+        }
+      }
+
+      .service-title {
+        margin: 5vw 0;
+        margin-right: 10vw;
+      }
+
+      .card_box-1 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2vw 4vw;
+        margin: 5vw 0;
+        background: $color-light;
+        border-radius: 24px;
+        box-shadow: $boxshadow-2, $boxshadow-1;
+        max-height: 25vw;
+      }
+
+      .card-item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        box-sizing: border-box;
+        width: 25%;
+        box-shadow: none;
+
+        & ~ .card-item {
+          margin: 0;
+        }
+
+        &.active, &:hover {
+          height: 300px;
+        }
+
+        img {
+          width: 12vw;
+          height: auto;
+        }
+        .menu-item {
+          margin: 0;
+          margin-top: 3vw;
+        }
+      }
+
+      .service-group2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2vw;
+
+        .group2-content {
+          width: 50%;
+          order: 2;
+          padding: 5vw 5vw 0 5vw;
+          box-sizing: border-box;
+        }
+
+        .service-caption-2 {
+          margin-left: 100px;
+        }
+
+        .service-subtitle {
+          margin: 5vw 0;
+          font-size: 2.4rem;
+          line-height: 3.2rem;
+          font-weight: 700;
+        }
+
+        .slideshow-panel {
+          width: 50%;
+          order: 1;
+          padding: 5vw 0 4vw 5vw;
+          margin: 0;
+          box-sizing: border-box;
+
+          &::before {
+            background: transparent;
+          }
+
+          .slideshow-container {
+            max-height: 60vw;
+            overflow: hidden;
+          }
+          .slideshow-item {
+            &::before {
+              width: 40vw;
+              height: 40vw;
+            }
+          }
+          .slideshow-image {
+            width: 100%;
+          }
+          .slideshow-pagination {
+            margin-top: 4vw;
+          }
+        }
+      }
+    }
+  }
+}

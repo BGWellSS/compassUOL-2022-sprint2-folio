@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+// Text types
+.text-light {
+  color: $textcolor-shade-1;
+}
+
+.text-dark {
+  color: $textcolor-shade-3;
+}
+
+.text-deactive {
+  color: $textcolor-shade-2;
+}
+
+.title1-light,
+.title2-light,
+.title3-light,
+.title4-light,
+.title5-light,
+.title6-light {
+  color: $color-dark;
+}
+
+.title1-dark,
+.title2-dark,
+.title3-dark,
+.title4-dark,
+.title5-dark,
+.title6-dark {
+  color: $color-light;
+}
+
+// Captions
+.caption {
+  $caption-margin-left: 40px;
+  position: relative;
+  margin-left: $caption-margin-left;
+
+  &::before {
+    content: "00.";
+    position: absolute;
+    left: -$caption-margin-left;
+    color: $textcolor-shade-2;
+  }
+}
+
+.caption1-light {
+  color: $color-dark;
+
+  &::before {
+    color: $textcolor-shade-3;
+  }
+}
+
+.caption1-dark {
+  color: $textcolor-secondary;
+
+  &::before {
+    color: $textcolor-shade-2;
+  }
+}
+
+.caption2-light {
+  color: $color-primary;
+
+  &::before {
+    color: $color-primary;
+  }
+}
+
+.caption2-dark {
+  color: $textcolor-secondary;
+
+  &::before {
+    color: $textcolor-secondary;
+  }
+}
+
+// Tablet Number
+.tablet-number-light {
+  color: $color-primary;
+}
+
+.tablet-number-dark {
+  color: $textcolor-secondary;
+}

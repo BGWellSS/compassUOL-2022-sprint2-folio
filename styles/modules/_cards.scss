@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+// Card Box 1
+.card_box-1 {
+  .card-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: $color-light;
+    color: $color-primary;
+    border-radius: 32px;
+    padding: 13vw 0 13vw 13vw;
+    box-shadow: $boxshadow-2, $boxshadow-1;
+    overflow: hidden;
+  
+    & ~ .card-item {
+      margin-top: 6.5vw;
+    }
+  
+    &.active, &:hover {
+      background: $color-primary;
+      color: $color-light;
+      box-shadow: none;
+    }
+  
+    img {
+      height: 20vw;
+      width: 20vw;
+    }
+  
+    p {
+      margin-left: 6.4vw;
+    }
+  }
+}
+
+// Achievement Cards
+.card_achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+
+  .card_achievement-text {
+    color: $textcolor-primary;
+  }
+}
+
+// Product Cards
+.card_products {
+  .card-item {
+    &:nth-child(4n+1) .card-image {
+      background-color: $accentcolor-2;
+    }
+    &:nth-child(4n+2) .card-image {
+      background-color: $color-secondary-shade;
+    }
+    &:nth-child(4n+3) .card-image {
+      background-color: $accentcolor-2-shade;
+    }
+    &:nth-child(4n+4) .card-image {
+      background-color: $color-primary-shade;
+    }
+    & ~ .card-item {
+      margin-top: 8.5vw;
+    }
+
+    .card-image {
+      width: 100%;
+      border-radius: 17px;
+    }
+  }
+
+  .card-featured {
+
+    .image-container {
+      position: relative;
+
+      &::after {
+        content: "Featured Product";
+        position: absolute;
+        bottom: 7vw;
+        left: 7vw;
+        padding: 2.1vw 4vw;
+        background-color: $accentcolor-3;
+        color: $color-light;
+        border-radius: 15px;
+      }
+    }
+  }
+
+  .card-title {
+    color: $color-dark;
+    margin-top: 6.5vw;
+  }
+
+  .card-link {
+    display: block;
+  }
+  
+  .link-icon {
+    padding: 1.7rem 1.4rem;
+    border: 2px solid $color-dark;
+    border-radius: 100%;
+  }
+}
+
+// Jobs Cards
+.card_jobs {
+  .card-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 12vw 10.7vw;
+    background-color: $color-light;
+    border-radius: 24px;
+
+    & > * {
+      width: fit-content;
+    }
+
+    &:hover {
+      background: $color-dark url("./../../images/theme/bkg-card-jobs1.svg") no-repeat;
+      background-position-x: 85%;
+      background-position-y: 50%;
+      width: 100vw;
+      
+      .card-title {
+        color: $textcolor-secondary;
+      }
+
+      .card-text {
+        color: $textcolor-shade-3;
+      }
+
+      .link-icon-dark {
+        display: none;
+      }
+      
+      .link-icon-white {
+        display: block;
+      }
+    }
+
+    & ~ .card-item {
+      margin-top: 4.3vw;
+    }
+
+    .card-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 5vw;
+      height: 5vw;
+    }
+
+    .link-icon-white {
+      display: none;
+    }
+  }
+}

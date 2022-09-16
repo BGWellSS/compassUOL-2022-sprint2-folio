@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+// Work Page
+.work {
+
+  .container {
+    padding: 13.85vw 10vw 0 10vw;
+  }
+
+  .work-caption {
+    &::before {
+      content: "04.";
+    }
+  }
+
+  .work-title {
+    color: $color-dark;
+    margin: 6.4vw 0;
+    margin-right: 15vw;
+  }
+
+  .body-small {
+    color: $textcolor-shade-1;
+  }
+
+  .work-navigation, .page-content {
+    margin-top: 10vw;
+  }
+
+  .button-contact-us {
+    margin: 10vw 0;
+  }
+  .work-group1 {
+    .work-button {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) { 
+  .work-page {
+    .work {
+      .page-description {
+        padding-left: 10vw;
+      }
+      .work-title {
+        margin: 2vw 0;
+        font-size: 6.4rem;
+        line-height: 7.2rem;
+        font-weight: 700;
+      }
+
+      .work-group1 {
+        display: flex;
+        align-items: center;
+
+        .work-button {
+          display: block;
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+        }
+      }
+    }
+  }
+}
