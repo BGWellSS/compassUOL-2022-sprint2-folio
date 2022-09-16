@@ -1703,6 +1703,9 @@ h6,
   padding: 13.85vw 8.5vw;
   overflow: hidden;
 }
+.cta .cta-caption::before {
+  content: "05";
+}
 .cta .container {
   position: relative;
   height: 808px;
