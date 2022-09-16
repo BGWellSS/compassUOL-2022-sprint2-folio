@@ -41,6 +41,10 @@
     & ~ .footer-box {
       border-top: $border-2;
     }
+
+    &:nth-child(3) {
+      display: none;
+    }
   }
 
   .speach-icon {
@@ -90,10 +94,211 @@
         border: 1px solid $color-primary;
       }
     }
+
+    .social-text {
+      display: none;
+    }
   }
 
   .social-icons {
     width: 15px;
     height: 15px;
+  }
+
+  .footer-symbol1,
+  .full-text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 5vw;
+
+    .footer-top {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 50% 50%;
+      background: $color-primary url("./../../images/theme/bkg-line-shade2.svg") no-repeat;
+      background-position: 10vw 0;
+      margin: 5vw 4vw 0 4vw;
+    }
+    .footer-symbol1 {
+      display: block;
+    }
+    .footer-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 8vw 6vw;
+      box-sizing: border-box;
+      width: 100%;
+
+      &:nth-child(1) {
+        grid-column: span 2;
+
+        .speach-icon {display: none;}
+
+        .caption {
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 2.2rem;
+          margin-top: 4vw;
+        }
+
+        .footer-text {
+          font-size: 2.4rem;
+          font-weight: 700;
+          line-height: 3.2rem;
+          margin-top: 2vw;
+          width: 50%;
+        }
+      }
+
+      //&:nth-child(2) { }
+
+      &:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .speach-icon {
+          width: 5vw;
+          height: 5vw;
+          margin: 0;
+        }
+
+        .text-container {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: nowrap;
+          width: 100%;
+        }
+
+        .footer-text {
+          text-align: left;
+          font-size: 2.4rem;
+          line-height: 3.2rem;
+          font-weight: 700;
+        }
+      }
+
+      .footer-title {
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+        font-weight: 700;
+      }
+
+      .button-primary-dark {
+        display: none;
+      }
+    }
+
+    .footer-botton {
+      margin: 0 4vw 5vw 4vw;
+      padding: 5vw 4vw;
+      background-position: 60vw -35px;
+
+      .text-deactive {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        font-weight: 500;
+        width: 50%;
+        margin-top: 4vw;
+      }
+
+      .full-text {
+        display: inline;
+      }
+
+      .footer-menu {
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+          .menu-list {
+            display: flex;
+          }
+        }
+      }
+      .menu-button {
+        display: none;
+      }
+      .menu-list {
+        position: initial;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50%;
+        box-shadow: none;
+        background: transparent;
+        margin-top: 2vw;
+
+        a {
+          color: $textcolor-shade-3;
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+          font-weight: 500;
+
+          &:nth-child(1) {
+            display: none;
+          }
+          &:nth-child(2) {
+            order: 2;
+          }
+          &:nth-child(3) {
+            order: 1;
+          }
+          &:nth-child(4) {
+            order: 3;
+          }
+          &:nth-child(5) {
+            order: 4;
+          }
+
+          &.active, &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+
+      .footer-social-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: $border-3;
+        width: 100%;
+        margin-top: 3vw;
+        padding-top: 2vw;
+
+        .social-text {
+          display: inline;
+          color: $color-primary;
+          margin-right: 30px;
+        }
+
+        .iten-link {
+          border: 0;
+          padding: 2vw;
+
+          & ~ .iten-link {
+            margin-left: 10px;
+          }
+        }
+
+        .footer-social {
+          display: flex;
+          align-items: center;
+          order: 2;
+          margin: 0;
+        }
+        .footer-text {
+          order: 1;
+          width: auto;
+          margin: 0;
+        }
+      }
+    }
   }
 }
