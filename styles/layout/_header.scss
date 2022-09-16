@@ -3,19 +3,14 @@
 // Header
 .header {
   position: relative;
-  background: url("./../../images/theme/bkg-header1.svg") no-repeat;
-  background-position: 50vw 0;
   padding-top: 5.2rem;
   overflow: hidden;
 
-  .page-container {
-    padding: 0 10vw;
-  }
-
-  .header-top {
+  .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10vw;
   }
 
   .header-botton {
@@ -26,11 +21,5 @@
 
   input#menuburger {
     display: none;
-  }
-
-  .header-botton-background {
-    width: 150vw;
-    margin-top: -30vw;
-    margin-left: -25vw;
   }
 }

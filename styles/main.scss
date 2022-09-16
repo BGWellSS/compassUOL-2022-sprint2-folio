@@ -12,6 +12,7 @@
 
 // Layout (Section)
 @import "./layout/header";
+@import "./layout/footer";
 
 // Modules
 @import "./modules/menu";
@@ -20,7 +21,7 @@
 @import "./modules/slideshow";
 
 // Pages
-//@import "./pages/home";
+@import "./pages/home";
 @import "./pages/about";
 @import "./pages/service";
 @import "./pages/work";

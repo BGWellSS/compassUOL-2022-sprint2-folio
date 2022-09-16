@@ -1,3 +1,24 @@
 @charset "UTF-8";
 
-//
+// Home
+.hero-page {
+  background: url("./../../images/theme/bkg-header1.svg") no-repeat;
+  background-position: 50vw 0;
+  
+  .hero {
+    box-sizing: border-box;
+    width: 100vw;
+    background: transparent url("./../../images/theme/bkg-header2.svg") no-repeat;
+    background-size: 150vw;
+    background-position-x: -25vw ;
+    background-position-y: 110% ;
+    padding-bottom: 70vw;
+    overflow: hidden;
+  }
+
+  .header-botton-background {
+    width: 150vw;
+    margin-top: -30vw;
+    margin-left: -25vw;
+  }
+}
