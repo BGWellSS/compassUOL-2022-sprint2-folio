@@ -19,7 +19,20 @@
     z-index: 1;
   }
 
-  input#menuburger {
+  input#menuburger,
+  .button-3-normal {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    .button-3-normal {
+      display: block;
+    }
+
+    .header-container {
+      padding: 0 5vw;
+    }
   }
 }
